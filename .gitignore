@@ -1,0 +1,46 @@
+# --------------------------
+# Python
+# --------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+.env
+
+# --------------------------
+# DuckDB / local DB
+# --------------------------
+db/*.duckdb
+db/*.wal
+db/*.tmp
+*.duckdb
+*.wal
+
+# --------------------------
+# Data (keep folders, ignore big contents)
+# --------------------------
+data/raw/*
+!data/raw/.gitkeep
+
+data/staged/*
+!data/staged/.gitkeep
+
+# Output CSVs are small + used by Power BI -> KEEP tracked
+# (so do NOT ignore data/output/)
+
+# --------------------------
+# Power BI / Windows clutter
+# --------------------------
+*.pbix~*
+*.pbit~*
+Thumbs.db
+Desktop.ini
+
+# --------------------------
+# VS Code / logs
+# --------------------------
+.vscode/
+*.log
